@@ -70,7 +70,7 @@ const Hero = () => {
 
                     <p className='text-lg md:text-xl text-muted-foreground max-w-xl mb-10 animate-fade-up delay-300 leading-relaxed'>
                         Crafting elegant solutions through clean code.
-                        Passionate about building performant applications and
+                        Passionate about building performant software and
                         exploring new technologies.
                     </p>
 
