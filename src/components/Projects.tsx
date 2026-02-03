@@ -3,25 +3,25 @@ import { ExternalLink, Github, Folder } from 'lucide-react';
 
 const featuredProjects = [
     {
-        title: 'Cloud Infrastructure Platform',
+        title: 'Scape by md',
         description:
-            'A comprehensive cloud management platform enabling teams to deploy, monitor, and scale applications with ease. Built with microservices architecture and real-time monitoring.',
-        tech: [],
+            '',
+        tech: ['Typescript', 'C', 'React', 'THREE.js', 'Node.js'],
         github: '#',
-        live: '#',
+        live: 'https://scapebymd.no',
     },
     {
-        title: 'Real-time Collaboration Tool',
+        title: 'Archway',
         description:
-            'A collaborative workspace application featuring real-time document editing, video conferencing, and project management capabilities for distributed teams.',
-        tech: [],
+            '',
+        tech: ['Astro', 'Python', 'Stable Diffusion'],
         github: '#',
-        live: '#',
+        live: 'https://archway.no',
     },
     {
-        title: 'ML-Powered Analytics Dashboard',
+        title: 'Placeholder',
         description:
-            'An intelligent analytics platform that leverages machine learning to provide predictive insights and automated reporting for e-commerce businesses.',
+            '',
         tech: [],
         github: '#',
         live: '#',
@@ -114,7 +114,6 @@ const Projects = () => {
                                 }}
                             >
                                 <div className='p-6 md:p-8 rounded-xl bg-card/50 backdrop-blur-sm border border-border hover:border-primary/30 card-hover gradient-border overflow-hidden'>
-                                    {/* Decorative accent */}
                                     <div className='absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-primary/10 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500' />
 
                                     <div className='relative'>
@@ -133,6 +132,8 @@ const Projects = () => {
                                                 <a
                                                     href={project.github}
                                                     className='p-2 text-muted-foreground hover:text-primary hover:bg-muted/50 rounded-lg transition-all duration-300'
+                                                    target='_blank'
+                                                    rel='noopener noreferrer'
                                                     aria-label='View source code'
                                                 >
                                                     <Github size={18} />
@@ -140,6 +141,8 @@ const Projects = () => {
                                                 <a
                                                     href={project.live}
                                                     className='p-2 text-muted-foreground hover:text-primary hover:bg-muted/50 rounded-lg transition-all duration-300'
+                                                    target='_blank'
+                                                    rel='noopener noreferrer'
                                                     aria-label='View live site'
                                                 >
                                                     <ExternalLink size={18} />

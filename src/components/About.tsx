@@ -55,7 +55,7 @@ const About = () => {
                                 <p>
                                     I'm a software engineer based in Norway with
                                     a passion for creating efficient, scalable,
-                                    and user-friendly applications. My journey
+                                    and user-friendly software. My journey
                                     in development started with curiosity about
                                     how things work, and has evolved into a
                                     career focused on solving complex problems.
