@@ -34,7 +34,7 @@ const Footer = () => {
                     </div>
 
                     <p className='text-sm text-muted-foreground mono'>
-                        © {new Date().getFullYear()}
+                        © {new Date().getFullYear()} by Daniel Halås
                     </p>
                 </div>
             </div>
