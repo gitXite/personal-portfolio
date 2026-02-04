@@ -30,7 +30,7 @@ const skillCategories = [
         skills: [
             'Node.js',
             'Express',
-            'Fast API',
+            'FastAPI',
             'Flask',
             'PostgreSQL',
             'MongoDB',
@@ -39,7 +39,7 @@ const skillCategories = [
     },
     {
         title: 'DevOps & Tools',
-        skills: ['Docker', 'Git', 'Postman', 'CI/CD'],
+        skills: ['Docker', 'Git', 'Postman', 'CI/CD', 'Bash'],
     },
 ];
 
