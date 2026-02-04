@@ -5,57 +5,41 @@ const featuredProjects = [
     {
         title: 'Scape by md',
         description:
-            '',
-        tech: ['Typescript', 'C', 'React', 'THREE.js', 'Node.js'],
+            'A fullstack service that sells framed topographic 3D printed models based on user selection',
+        tech: ['Typescript', 'C', 'React', 'THREE.js', 'Node.js', 'Tailwind CSS'],
         github: '#',
         live: 'https://scapebymd.no',
     },
     {
         title: 'Archway',
         description:
-            '',
-        tech: ['Astro', 'Python', 'Stable Diffusion'],
+            'An AI-driven SaaS developed for architectural firms, that creates photorealistic renders from references',
+        tech: ['Astro', 'Python', 'Stable Diffusion', 'React', 'Tailwind CSS'],
         github: '#',
         live: 'https://archway.no',
-    },
-    {
-        title: 'Placeholder',
-        description:
-            '',
-        tech: [],
-        github: '#',
-        live: '#',
     },
 ];
 
 const otherProjects = [
     {
-        title: 'CLI Task Manager',
+        title: 'HANDL',
         description:
-            'A powerful command-line tool for managing tasks and projects with git integration.',
-        tech: [],
+            'A fullstack collaborative shopping list web app, with user authentication and realtime updates',
+        tech: ['Javascript', 'React', 'CSS', 'Node.js'],
         github: '#',
     },
     {
-        title: 'API Rate Limiter',
+        title: 'Terrain Microservice',
         description:
-            'Distributed rate limiting service with support for multiple algorithms.',
-        tech: [],
-        github: '#',
+            'Microservice to generate STL files based on DEM data',
+        tech: ['C', 'Node.js', 'Docker'],
+        github: 'https://github.com/gitXite/terrain-service',
     },
     {
-        title: 'Design System',
-        description:
-            'Comprehensive React component library with accessibility built-in.',
-        tech: [],
-        github: '#',
-    },
-    {
-        title: 'Log Aggregator',
-        description:
-            'Centralized logging solution with real-time search and alerting.',
-        tech: [],
-        github: '#',
+        title: 'Voice Keyboard PoC',
+        description: 'Proof of concept for a voice to text based keyboard, that determines key weight bias from voice',
+        tech: ['Python'],
+        github: 'https://github.com/gitXite/voice-keyboard-poc',
     },
 ];
 
@@ -201,6 +185,8 @@ const Projects = () => {
                                         href={project.github}
                                         className='p-2 text-muted-foreground hover:text-primary hover:bg-muted/50 rounded-lg transition-all duration-300'
                                         aria-label='View source code'
+                                        target='_blank'
+                                        rel='noopener noreferrer'
                                     >
                                         <Github size={18} />
                                     </a>

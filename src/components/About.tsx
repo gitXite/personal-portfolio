@@ -70,10 +70,8 @@ const About = () => {
                                     attention to detail.
                                 </p>
                                 <p>
-                                    When I'm not coding, you might find me
-                                    exploring the Norwegian fjords, contributing
-                                    to open-source projects, or experimenting
-                                    with new technologies.
+                                    I'm a man of many hobbies. When I'm not coding, 
+                                    you might find me making music or playing sports. 
                                 </p>
                             </div>
                         </div>
