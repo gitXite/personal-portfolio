@@ -41,7 +41,7 @@ const Hero = () => {
             <div className='absolute bottom-1/4 -right-32 w-80 h-80 bg-accent/15 rounded-full blur-[100px] animate-float delay-300' />
 
             <div
-                className='absolute inset-0 opacity-[0.03]'
+                className='absolute inset-0 opacity-[0.1]'
                 style={{
                     backgroundImage: `radial-gradient(hsl(var(--primary) / 0.8) 1px, transparent 1px)`,
                     backgroundSize: '32px 32px',

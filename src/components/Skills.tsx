@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import SpotlightCard from './SpotlightCard';
 
 const skillCategories = [
     {
@@ -91,17 +92,15 @@ const Skills = () => {
 
                     <div className='grid sm:grid-cols-2 gap-6'>
                         {skillCategories.map((category, categoryIndex) => (
-                            <div
+                            <SpotlightCard
                                 key={category.title}
                                 className={`group p-6 rounded-xl bg-card/50 backdrop-blur-sm border border-border hover:border-primary/30 card-hover gradient-border ${
                                     isVisible ? 'animate-blur-in' : 'opacity-0'
                                 }`}
-                                style={{
-                                    animationDelay: `${(categoryIndex + 2) * 150}ms`,
-                                }}
+                                animationDelay={`${(categoryIndex + 2) * 150}ms`}
                             >
                                 <div className='flex items-center gap-3 mb-5'>
-                                    <div className='w-1 h-6 rounded-full bg-gradient-to-b from-primary to-accent' />
+                                    <div className='w-1 h-6 rounded-full bg-primary from-primary to-accent' />
                                     <h4 className='text-lg font-semibold text-foreground'>
                                         {category.title}
                                     </h4>
@@ -121,7 +120,7 @@ const Skills = () => {
                                         ),
                                     )}
                                 </div>
-                            </div>
+                            </SpotlightCard>
                         ))}
                     </div>
                 </div>

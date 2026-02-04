@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { ExternalLink, Github, Folder } from 'lucide-react';
+import SpotlightCard from './SpotlightCard';
 
 const featuredProjects = [
     {
@@ -97,7 +98,7 @@ const Projects = () => {
                                     animationDelay: `${(index + 2) * 150}ms`,
                                 }}
                             >
-                                <div className='p-6 md:p-8 rounded-xl bg-card/50 backdrop-blur-sm border border-border hover:border-primary/30 card-hover gradient-border overflow-hidden'>
+                                <SpotlightCard className='p-6 md:p-8 rounded-xl bg-card/50 backdrop-blur-sm border border-border hover:border-primary/30 card-hover gradient-border overflow-hidden'>
                                     <div className='absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-primary/10 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500' />
 
                                     <div className='relative'>
@@ -149,7 +150,7 @@ const Projects = () => {
                                             ))}
                                         </div>
                                     </div>
-                                </div>
+                                </SpotlightCard>
                             </div>
                         ))}
                     </div>
@@ -165,14 +166,12 @@ const Projects = () => {
 
                     <div className='grid sm:grid-cols-2 gap-4'>
                         {otherProjects.map((project, index) => (
-                            <div
+                            <SpotlightCard
                                 key={project.title}
                                 className={`group p-5 rounded-xl bg-card/30 backdrop-blur-sm border border-border hover:border-primary/30 card-hover ${
                                     isVisible ? 'animate-blur-in' : 'opacity-0'
                                 }`}
-                                style={{
-                                    animationDelay: `${(index + 6) * 100}ms`,
-                                }}
+                                animationDelay={`${(index + 6) * 100}ms`}
                             >
                                 <div className='flex items-start justify-between mb-4'>
                                     <div className='p-2 rounded-lg bg-primary/10 border border-primary/20'>
@@ -210,7 +209,7 @@ const Projects = () => {
                                         </span>
                                     ))}
                                 </div>
-                            </div>
+                            </SpotlightCard>
                         ))}
                     </div>
                 </div>

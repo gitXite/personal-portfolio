@@ -161,7 +161,7 @@
             hsl(var(--primary) / 0.5),
             transparent 40%,
             transparent 60%,
-            hsl(var(--accent) / 0.5)
+            hsl(var(--accent) / 0.2)
         );
         z-index: -1;
         opacity: 0;
