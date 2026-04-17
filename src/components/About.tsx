@@ -84,7 +84,7 @@ const About = () => {
                             }`}
                         >
                             <div className='relative group'>
-                                <div className='absolute -inset-2 bg-gradient-to-r from-primary/20 via-transparent to-accent/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700' />
+                                <div className='absolute -inset-2 bg-gradient-to-r from-primary/20 via-transparent to-primary/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700' />
                                 <div className='relative aspect-square rounded-xl bg-gradient-to-br from-muted/50 to-card border border-border overflow-hidden gradient-border'>
                                     <div className='absolute flex items-center justify-center text-7xl opacity-30'>
                                         <img src="/images/daniel.png" alt="Daniel" />

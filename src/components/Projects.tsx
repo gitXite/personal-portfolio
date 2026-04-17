@@ -34,7 +34,7 @@ const otherProjects = [
         description:
             'Microservice to generate STL files based on DEM data',
         tech: ['C', 'Node.js', 'Docker'],
-        github: 'https://github.com/gitXite/terrain-service',
+        github: 'https://github.com/gitXite/terrain-service-refactored',
     },
     {
         title: 'Voice Keyboard PoC',

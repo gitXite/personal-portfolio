@@ -38,7 +38,7 @@ const Hero = () => {
     return (
         <section className='min-h-screen flex items-center justify-center relative overflow-hidden noise-overlay'>
             <div className='absolute top-1/4 -left-32 w-96 h-96 bg-primary/20 rounded-full blur-[120px] animate-float' />
-            <div className='absolute bottom-1/4 -right-32 w-80 h-80 bg-accent/15 rounded-full blur-[100px] animate-float delay-300' />
+            <div className='absolute bottom-1/4 -right-32 w-80 h-80 bg-accent/5 rounded-full blur-[100px] animate-float delay-300' />
 
             <div
                 className='absolute inset-0 opacity-[0.1]'
